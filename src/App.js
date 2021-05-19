@@ -10,9 +10,7 @@ function App() {
 
   useEffect(()=>{setIsCool(COOL_NAMES.includes(name.toLocaleLowerCase()))} , [name])
 
-  const handleChange = (e) => {
-    setName(e.target.value)
-  }
+  const handleChange = (e) => {setName(e.target.value)}
 
   return (
     <div className="App">
